@@ -1,0 +1,267 @@
+/*
+    Algemene CSS regels
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    color: white;
+}
+
+body {
+    background-color: #192230;
+}
+
+.content {
+    margin: 0% 1% 2.5% 1%;
+}
+
+/*Zorgt ervoor dat er of login mogelijkheid is, of de username*/
+.no_display {
+    display: none !important;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.centered_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.film {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border: solid #26477C 2px;
+    box-shadow: 0 13px 20px rgba(0, 0, 0, 0.6);
+}
+
+.film img {
+    width: 100%;
+    height: 85%;
+}
+
+.film div {
+    text-align: center;
+    margin: 2%;
+    height: 15%;
+}
+
+.film:hover {
+    border: solid #DC0505 2px;
+}
+
+aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+aside img {
+    width: 100%;
+    height: 100%;
+}
+/* class met de content die gedisplayt wordt op hover van de dropdown class */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DC0505;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0; /*Nodig voor IE*/
+    border: solid black 2px;
+    box-shadow: 0 13px 20px rgba(0, 0, 0, 0.6);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 4% 2%;
+    text-decoration: none;
+    display: block;
+    border-top: solid black 1px;
+    width: 100%;
+}
+
+/* Als de muis boven de dropdownbox is display de content van de dropdownbox */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*onder kleurtje als je op een van de links hovert*/
+.dropdown-content a:hover {
+    background-color: #26477C;
+}
+
+/* class voor dropdown boxxes */
+.dropdown {
+    position: relative;
+}
+
+/*
+    Header
+*/
+
+header {
+    border: solid black 2px;
+    width: 100%; /*nodig om geen dode rij pixels aan de rechter kant van de header te krijgen*/
+    height: 10%;
+    background-color: #DC0505;
+    /*Om het aan de bovenkant van de pagina te krijgen*/
+    top: 0;
+    margin-bottom: 2.5%; /*zorgt ervoor dat content op de pagina altijd onder de header staat*/
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+header a {
+    width: 20%;
+}
+
+header a img {
+    width: 100%;
+    height: 100%;
+    border: solid black 1px;
+}
+
+nav {
+    width: 101%; /*Om de header te vullen met 1 nav en 1 img*/
+}
+
+nav a, #nav2{
+    width: 25%; /*Om te zorgen dat de hele nav wordt gevuld met 4 keer nav a*/
+    height: 100%; /*Nodig om dode rij pixels onder de nav a te voorkomen*/
+    text-decoration: none;
+    /*Volgende 3 om text in het midden van de nav a te krijgen*/
+}
+
+#nav1, #nav2, #nav3, #nav4 {
+    border: solid black 1px;
+}
+
+
+.selected {
+    /*Om de gebruiker te laten weten op welke pagina hij is*/
+    background-color: #26477C;
+}
+
+#login {
+    width: 71%;
+}
+
+#login_text {
+    border: solid black 1px;
+    border-right: none; /*Om de illusie te creëeren dat de login_text en forms in 1 box te zetten*/
+    width: 30%;
+}
+
+
+#login form {
+    width: 101% /*101 om dode rij pixels op te lossen*/;
+    display: flex;
+}
+
+#login form .forms{
+    width: 60%;
+    border: solid black 1px;
+    border-left: none; /*Om de illusie te creëeren dat de login_text en forms in 1 box te zetten*/
+    padding-right: 1%;
+
+    justify-content: center;
+}
+#login form .forms input {
+    width: 60%;
+}
+
+#login form .forms div {
+    margin: 1% 0%;
+    justify-content: space-between;
+}
+
+#login form .forms input {
+    background-color: #26477C;
+    border: solid black 1px;
+}
+
+#submit_login {
+    width: 40%;
+    border: solid black 1px;
+}
+#submit_login input {
+    width: 101%; /*om dode rij pixels te voorkomen*/
+    height: 101%;
+    background-color: #041e47;
+}
+
+#ingelogd {
+    flex-wrap: wrap;
+    width: 10%;
+}
+
+header a:hover, header a:hover div {
+    color: #041e47;
+}
+
+/*Media queries header*/
+@media screen and (max-width: 940px) {
+    #nav4 { display: none; }
+    header a { width: 25%}
+    nav { width: 75%; }
+    nav a, #nav2 { width: 33.3%; }
+    #login { width: 100%;}
+}
+
+@media screen and (max-width: 830px) {
+    #nav4, #nav3 { display: none; }
+    header a { width: 33.3%; }
+    nav { width: 66.7%; }
+    nav a, #nav2 { width: 50%; }
+}
+
+@media screen and (max-width: 630px) {
+    #nav4, #nav3, #nav2 { display: none; }
+    header a { width: 50%;}
+    nav { width: 50%;}
+    nav a, #nav2 { width: 100%; }
+}
+
+@media screen and (max-width: 410px) {
+    header { font-size: 0.7em;}
+}
+
+/*
+    Footer
+*/
+
+footer {
+    width: 100%;
+    height: 2.5%;
+    background-color: #DC0505;
+    border: solid black 1px;
+
+    /*Om het aan de onderkant van de pagina te krijgen*/
+    bottom: 0;
+    position: fixed; /*om het echt onderaan de pagina te krijgen*/
+
+    justify-content: space-around; /*Om de inhoud netjes te verdelen over de regel*/
+    flex-wrap: wrap; /*Om te zorgen dat het met kleinere breedte ook werkt*/
+    align-items: center;
+}
+
+footer div, footer div a {
+    /*Text opmaak in de footer*/
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+@media screen and (max-width: 290px) {
+    footer, footer div {font-size: 0.9em;}
+}

@@ -1,0 +1,89 @@
+/*algemene box, zorgt voor positionering met header,
+ footer en spreiding tussen de elementen*/
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+/*
+    Filters
+*/
+.content aside {
+    text-align: center;
+
+    background-color: #041e47;
+    border: solid black 1px;
+    margin: 0% 1%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 13px 20px rgba(0, 0, 0, 0.6);
+}
+
+/*Om zwarte text te krijgen op de witte achtergrond van de forms*/
+.content aside option, .content aside select, .content aside input {
+    color: black;
+}
+
+
+#filters input {
+    margin-top: 1%;
+}
+
+#filters {
+    position: fixed;/*Om mee te bewegen op de pagina*/
+    left:2.3%; /*Chrome en Firefox hebben dit niet nodig IE wel*/
+    width: 15%;
+}
+
+.content aside form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 365px) {
+    .content aside { font-size: 0.7em; }
+}
+/*
+    Films
+*/
+.content article {
+    width: 100%;
+
+    margin: 0% 1%;
+}
+
+#films {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+}
+
+.film {
+    width: 23%; /*4 films per regel*/
+    margin: 1%; /*iets ruimte tussen de films*/
+}
+
+/*Naar 3 films naast elkaar*/
+@media screen and (max-width: 1000px) {
+    .film {
+        width: 30%;
+    }
+}
+/*2 films naast elkaar*/
+@media screen and (max-width: 785px) {
+    .film {
+        width: 46%;
+    }
+}
+/*1 film per regel*/
+@media screen and (max-width: 525px) {
+    .film {
+        width: 96%;
+        font-size: 1.4em;
+    }
+}

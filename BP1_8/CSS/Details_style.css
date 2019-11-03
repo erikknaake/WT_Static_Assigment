@@ -1,0 +1,16 @@
+.content aside {
+	width: 30%;
+	border: solid #26477C 2px;
+	margin: 3% 1% 1% 0%;
+}
+
+.content aside img {
+	width: 100%;
+}
+
+.content aside a {
+	text-decoration: none;
+}
+.content article h1 {
+	margin-bottom: 2%;
+}

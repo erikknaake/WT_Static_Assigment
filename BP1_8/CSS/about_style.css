@@ -1,0 +1,17 @@
+#bijschrift_box {
+	text-align: center;
+	color: white;
+}
+
+#text_box {
+	background-color: red;
+	border: 1px solid black;
+	margin: 0% 2%;
+	width: 70%;
+	box-shadow: 0 13px 20px rgba(0, 0, 0, 0.6);
+}
+
+aside {
+	border: solid #26477C 2px;
+	box-shadow: 0 13px 20px rgba(0, 0, 0, 0.6);
+}

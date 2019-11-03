@@ -1,0 +1,55 @@
+table{
+	background-color: #DC0505;
+	color: white;
+	border-collapse: collapse;
+	width: 70%;
+	text-align: center;
+}
+td, th{
+	font-size: 1.5em;
+	width: 20%;
+	border: 1px solid black;
+}
+/*om de twee velden links boven ontzichtbaar te maken*/
+.noBorder{
+	border: solid #192230 1px;
+	background-color: #192230;
+}
+
+th[colspan="3"] {
+	font-size: 2em;
+}
+
+#invoerveld{
+	text-align: center;
+	width: 30%;
+	margin-top: 2em;
+	background-color: #DC0505;
+	border: solid black 1px;
+	box-shadow: 0 13px 20px rgba(0, 0, 0, 0.6);
+}
+
+.content form input, .content form select{
+	color: black;
+	border: solid black 1px;
+	width: 70%;
+}
+
+.content form select option {
+	color: black;
+}
+.content input[type="submit"]{
+	margin: 2% auto;
+}
+
+@media screen and (max-width: 520px) {
+	table { font-size: 0.8em; }
+}
+
+@media screen and (max-width: 420px) {
+	table { font-size: 0.6em; }
+}
+
+@media screen and (max-width: 315px) {
+	table { font-size: 0.4em; }
+}

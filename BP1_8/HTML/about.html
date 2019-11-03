@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Daan Sperling">
+    <meta name="description" content="Developers van FletNix, een korte beschrijving over ons">
+    <meta name="keywords" content="FletNix,about,team">
+
+	<title>About</title>
+
+	<link rel="stylesheet" type="text/css" href="../CSS/about_style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/header_and_footer.css">
+</head>
+<body>
+<header class="row">
+	<a href="../HTML/index.html" class="row"><img src="../Images/fletnix_logo.png" alt="FletNix logo"></a>
+	<!-- Plaats class="selected" als de huidige pagina op dit element in de nav zit-->
+	<nav class ="row">
+		<a href="../HTML/index.html" class="centered_content" id="nav1">
+			<div>
+				Home
+			</div>
+		</a>
+		<div id="nav2" class="dropdown  centered_content">
+			<div class="centered_content">Filmoverzicht</div>
+			<div class="dropdown-content">
+				<a href="../HTML/filmoverzicht.html">Alle&nbsp;genres</a>
+				<a href="../HTML/filmoverzicht_sci_fi.html">Sci&#8209;Fi</a>
+				<a href="../HTML/filmoverzicht_action.html">Action</a>
+				<a href="../HTML/filmoverzicht_komedie.html">Komedie</a>
+			</div>
+		</div>
+		<a href="../HTML/Abbonnementen.html" id="nav3" class="centered_content">
+			<div>
+				Abbonnementen
+			</div>
+		</a>
+		<a href="../HTML/about.html" id="nav4" class="selected centered_content">
+			<div>
+				Over ons
+			</div>
+		</a>
+	</nav>
+	<div id="login" class="row"> <!-- Plaats class="no_display als de gebruiker ingelogd moet zijn"-->
+		<div id="login_text" class="centered_content">
+			Inloggen:
+		</div>
+		<form method="post">
+			<div class="forms column">
+				<div class="row">
+					Username: <input type="text" name="Username">
+				</div>
+				<div class="row">
+					Password: <input type="password" name="Password">
+				</div>
+			</div>
+			<div id="submit_login">
+				<input type="submit" value="Login">
+			</div>
+		</form>
+	</div>
+	<div id="ingelogd" class="centered_content no_display"> <!-- Plaats class=no_display als de gebruiker nog moet inloggen -->
+		Hallo erik321123
+	</div>
+</header>
+
+	<div class="content row">
+		<aside class="column">
+			<img src="../Images/two-donkeys.jpg" alt="Ons team">
+			<div id="bijschrift_box">
+
+					ons team
+
+			</div>
+		</aside>
+		<div id="text_box">
+			Wij zijn Erik en Daan. 2 jongens die zich keihard inzetten om voor jou alleen de beste
+			kwaliteit te kunnen garanderen. Elke dag zetten we ons voor 100% in om onze content
+			te verbeteren.<br>
+			Wij zijn altijd op zoek naar support om onze website te verbeteren. Donaties zijn daarom
+			altijd welkom(minimum bedrag &euro; 100.00). 
+		</div>
+	</div>
+
+
+
+	<footer class="row">
+		<div>&copy; 2017 FletNix</div>
+		<div><a href="../HTML/werk_in_uitvoering.html">Cookiegebruik</a></div>
+		<div><a href="../HTML/werk_in_uitvoering.html">Disclaimer</a></div>
+		<div><a href="../HTML/werk_in_uitvoering.html">Contact</a></div>
+	</footer>
+</body>
+</html>

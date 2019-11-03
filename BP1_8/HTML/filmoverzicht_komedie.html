@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Erik Knaake">
+    <meta name="description" content="Collectie van films op FletNix, u kunt filters gebruiken om effecteiver te zoeken naar een geschikte film">
+    <meta name="keywords" content="FletNix,Films,Sci-Fi,Action,Komedie">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/header_and_footer.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/film_overzicht.css">
+    <title>Filmoverzicht</title>
+</head>
+<body>
+
+<header class="row">
+    <a href="../HTML/index.html" class="row"><img src="../Images/fletnix_logo.png" alt="FletNix logo"></a>
+    <!-- Plaats class="selected" als de huidige pagina op dit element in de nav zit-->
+    <nav class ="row">
+        <a href="../HTML/index.html" class="centered_content" id="nav1">
+            <div>
+                Home
+            </div>
+        </a>
+        <div id="nav2" class="selected dropdown centered_content">
+            <div class="centered_content">Filmoverzicht</div>
+            <div class="dropdown-content">
+                <a href="../HTML/filmoverzicht.html">Alle&nbsp;genres</a>
+                <a href="../HTML/filmoverzicht_sci_fi.html">Sci&#8209;Fi</a>
+                <a href="../HTML/filmoverzicht_action.html">Action</a>
+                <a href="../HTML/filmoverzicht_komedie.html">Komedie</a>
+            </div>
+        </div>
+        <a href="../HTML/Abbonnementen.html" id="nav3" class="centered_content">
+            <div>
+                Abbonnementen
+            </div>
+        </a>
+        <a href="../HTML/about.html" id="nav4" class="centered_content">
+            <div>
+                Over ons
+            </div>
+        </a>
+    </nav>
+    <div id="login" class="row"> <!-- Plaats class="no_display als de gebruiker ingelogd moet zijn"-->
+        <div id="login_text" class="centered_content">
+            Inloggen:
+        </div>
+        <form method="post">
+            <div class="forms column">
+                <div class="row">
+                    Username: <input type="text" name="Username">
+                </div>
+                <div class="row">
+                    Password: <input type="password" name="Password">
+                </div>
+            </div>
+            <div id="submit_login">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <div id="ingelogd" class="centered_content no_display"> <!-- Plaats class=no_display als de gebruiker nog moet inloggen -->
+        Hallo erik321123
+    </div>
+</header>
+
+<div class="content">
+
+    <!-- Filters -->
+    <aside>
+        <div id="filters">
+            <h2>Filters</h2>
+            <form id="Filter">
+                <label for="zoeken">Zoek op naam:</label>
+                <input id="zoeken" type="search" name="zoek_op_naam">
+                <label for="genre">Filter op genre:</label>
+                <select id="genre" name="Genre">
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Actie">Actie</option>
+                    <option value="Komedie">Komedie</option>
+                </select>
+                <label for="speelduur">Filter op speelduur:</label>
+                <select id="speelduur" name="Speelduur">
+                    <option value="60">&lt; 60 minuten</option>
+                    <option value="60-100">60-100 minuten</option>
+                    <option value="100-150">100-150 minuten</option>
+                    <option value="150">&gt; 150 minuten</option>
+                </select>
+
+                <input type="submit" value="Filter">
+            </form>
+        </div>
+    </aside>
+
+    <!-- Films -->
+    <article>
+        <div id="firstrow">
+            <h2>Onze films:</h2>
+        </div>
+        <div id="films">
+            <a href="https://www.youtube.com/watch?v=t3GaQPL3kZk" target="_blank" class="film">
+                <img src="../Images/TNG1.jpg" alt="The Naked Gun">
+                <div class="centered_content">
+                    The Naked Gun
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=H4RssRXLWhQ" target="_blank" class="film">
+                <img src="../Images/TNG2.jpg" alt="The Naked Gun 2 &#189;">
+                <div class="centered_content">
+                    The Naked Gun 2 &#189;
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=SQaULBUqxMs" target="_blank" class="film">
+                <img src="../Images/TNG3.jpg" alt="The Naked Gun 33  &#8531;">
+                <div class="centered_content">
+                    The Naked Gun 33 &#8531;
+                </div>
+            </a>
+        </div>
+    </article>
+</div>
+
+<footer class="row">
+    <div>&copy; 2017 FletNix</div>
+    <div><a href="../HTML/werk_in_uitvoering.html">Cookiegebruik</a></div>
+    <div><a href="../HTML/werk_in_uitvoering.html">Disclaimer</a></div>
+    <div><a href="../HTML/werk_in_uitvoering.html">Contact</a></div>
+</footer>
+</body>
+</html>

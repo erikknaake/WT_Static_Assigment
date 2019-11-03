@@ -1,0 +1,28 @@
+.content {
+    justify-content: space-around;
+}
+.content article {
+    width: 80%;
+}
+
+.content article div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content aside p {
+    background-color: #DC0505;
+    border: solid black 1px;
+    box-shadow: 0 13px 20px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 390px) {
+    .content article {
+        width: 60%;
+    }
+    .content article a {
+        font-size: 0.8em;
+    }
+    .content aside { width: 35%; }
+}
